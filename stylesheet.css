@@ -1,0 +1,360 @@
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color: #DDBDD5;
+   /* background-image: url('https://i.pinimg.com/564x/d4/4a/6e/d44a6eba1405b6090a9e9a455365f23f.jpg');
+     background-repeat: no-repeat; 
+     background-size: cover;
+     background-position: center center;
+
+    /* Customize the font, size, and color for text*/
+   
+    font-size: 16px;
+    color: black;
+
+     /* Adjust the padding and margins  
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;*/
+  
+   border: 10px;
+  
+    
+}
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+font-size: 90px;
+font-family:'Courier New', Courier, monospace;
+}
+
+h2 {
+font-family: cursive;
+color: #59656f;
+padding: 10px;
+text-align:center;
+font-size: 35px;
+}
+
+h3 {
+font-size: 25px;
+
+}
+
+p {
+ font-size: 20px;
+ font-family:'Times New Roman', Times, serif;
+  letter-spacing:1px;
+line-height: 1.4;
+
+}
+.img{
+  padding: 10px;
+}
+#paragraph{
+  padding: 0px;
+}
+
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Example: This styles elements with class="header"*/
+
+.main-content{
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom:  100px;
+}
+
+.main-text{
+  text-align: center;
+}
+
+.main-text h1{
+  line-height: 2em;
+  font-size: 60px;
+  margin: 2px;
+  color: #59656f;
+  font-family: cursive;
+}
+.main-text p{
+  color: #59656f;
+  font-family: cursive;
+}
+
+/*
+  Style Buttons: Add style rules for any buttons
+*/
+
+button {
+  background-color: white;
+  display: block;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  width: 200px; 
+  
+}
+#Header-button{
+  background-color: white;
+  display: block ;
+  color:  #59656f;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  
+   width:50%;
+    float:left;
+  }
+#Header-button > a {
+  color: black;
+  text-decoration: none;
+}
+
+#Header-button > a:hover {
+  text-decoration: underline;
+}
+
+#resources{
+  padding: 50px;
+}
+#Resources-button{
+  width:500px;
+  height: 50px;
+   border: dashed;
+  background-color: transparent;
+  color:#59656f;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+#sign-now-button{
+  width: 100px;
+  height: 40px;
+}
+
+/* footer code */
+
+.footer{
+  padding-right: 20px;
+  
+  background-color: black;
+  color: aliceblue;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer-links{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content : space-between;
+  margin : 0px;
+}
+.footer-links > li > a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer-links > li > a:hover{
+  text-decoration: underline ;
+}
+
+.footer > h1{
+  margin: 15px 0px;
+  text-align: center;
+}
+
+/*navbar css code*/
+#nav-items{
+  padding: 20px ;
+  border-left: 100px black;
+  border-right: 100px black;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height:70px;
+  font-size: 25px;
+  width: auto;
+  text-decoration: none;
+}
+#nav-items > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-items > li > a:hover {
+  text-decoration: underline;
+}
+.nav-bar{
+  background-color: black;
+}
+/* Add style to dark mode button */
+#theme-button {
+  text-decoration: underline;
+  font: message-box;
+  color: fuchsia;
+  padding: 10px;
+  border: dotted;
+  }
+/* Customize Dark Mode Theme */
+.dark-mode {
+background-color: black;
+color: white;
+}
+
+/* Petition css side code */
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+  }
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  background:pink;
+  margin: 20px;
+}
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active{
+ opacity: 1;
+  transform: translateY(0px);
+}
+
+.popUp{
+  position: fixed;
+  display: none;
+  max-height: 50%;
+  height : 50%;
+  width : 45%;
+  top: 25%;
+  background-color : lightgrey;
+  border-radius : 25px;
+  left: 25%;
+  animation : popin .2s ease-in; 
+}
+
+.pop-div{
+  display: flex;
+  flex-direction : row;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+}
+
+.popUp-text, .popUp-image{
+  flex : 1;
+  flex-grow : 1;
+}
+
+.popUp-text {
+  margin: 0px;
+  text-align : center;
+  font-size : 25px;
+}
+
+.popUp-image img{
+  max-width : 100%;
+}
+
+@keyframes popin{
+  0%{
+    height : 0%;
+    width : 0%;
+    top : 50%;
+    left : 50%
+  }
+  100%{
+    height : 50%;
+    width : 40%;
+    left: 25%;
+    top: 25%;
+  }
+}
+#fname{
+  width: 200px;
+}
+
+.paragraph::first-letter {
+  initial-letter: 2;
+}
+
+.body-padding{
+  padding: 70px;
+}
+.mySlides{
+  align-content: center
+}
+
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+ .nav-bar, .main-content, .Header Buttons, .about revealable, .Effects revealable, .petition revealable, .signatures, .popUp, .Resources revealable, .Resources-button, .dark-mode {
+    width: 100%;
+  }
+}
